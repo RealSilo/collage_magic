@@ -27,33 +27,24 @@ Or install it yourself as:
 
 ## Usage
 
+Read the usage information:
+
+   $ bundle exec bin/collage_magic help start
+
 Run the following command from the command line:
 
-    $ be bin/collage_magic start ARGV
+    $ bundle exec bin/collage_magic start ARGV
 
 
 ARGV can be any number of keywords, so you could say:
 
-    $ be bin/collage_magic start cat dog horse
-
-```
-    Welcome! This program will let you create an image collage from random keywords.
-  You can choose up to ten keywords, and I will search images on Flickr associated to them.
-  If you enter less than ten keywords, I will generate as many as I need to have ten keywords.
-  If you enter more than ten, any extra one will be disregarded.
-
-  To start, you need to:
-  1) enter your Flickr API key. Please type:
-     $export FLICKR_API_KEY=your_api_key
-  2) give me a path where you would like to have your collage saved. Please type:
-     $export COLLAGE_MAGIC_IMAGE_PATH=/your/desired/path/
-```
+    $ bundle exec bin/collage_magic start cat dog horse
 
 ## Tests
 
      Tests can be run with:
 
-         $ be rake spec
+         $ bundle exec rake spec
 
 
 ## Development
